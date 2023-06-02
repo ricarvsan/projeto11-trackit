@@ -41,14 +41,14 @@ export default function TelaLogin() {
         <PageContainer>
             <img src={logo} alt="" />
             <form onSubmit={cadastrar}>
-                <input type='email' disabled={disabled} placeholder="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                <input type='password' disabled={disabled} placeholder="senha" value={senha} onChange={(e) => setSenha(e.target.value)} required />
-                <input type='text' disabled={disabled} placeholder="nome" value={nome} onChange={(e) => setNome(e.target.value)} required />
-                <input type='url' disabled={disabled} placeholder="foto" value={url} onChange={(e) => setUrl(e.target.value)} required />
-                <button type='submit' disabled={disabled}>{disabled ? load : `Cadastrar`}</button>
+                <input data-test='email-input' type='email' disabled={disabled} placeholder="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                <input data-test='password-input' type='password' disabled={disabled} placeholder="senha" value={senha} onChange={(e) => setSenha(e.target.value)} required />
+                <input data-test='user-name-input' type='text' disabled={disabled} placeholder="nome" value={nome} onChange={(e) => setNome(e.target.value)} required />
+                <input data-test='user-image-input' type='url' disabled={disabled} placeholder="foto" value={url} onChange={(e) => setUrl(e.target.value)} required />
+                <button data-test='signup-btn' type='submit' disabled={disabled}>{disabled ? load : `Cadastrar`}</button>
             </form>
-            <p>Já tem uma conta? <Link to='/'>Faça login!</Link></p>
-            <p>Link para <Link to='/habitos'>Habitos</Link></p>
+            <p>Já tem uma conta? <Link data-test='login-link' to='/'>Faça login!</Link></p>
+            {/*<p>Link para <Link to='/habitos'>Habitos</Link></p>*/}
         </PageContainer>
     );
 }
