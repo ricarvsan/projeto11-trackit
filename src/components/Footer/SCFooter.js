@@ -1,40 +1,51 @@
 import styled from "styled-components"
 
+
 export const FooterContainer = styled.div`
     width: 100%;
-    height: 120px;
-    background-color: #C3CFD9;
+    height: 70px;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 20px;
     position: fixed;
     bottom: 0;
+    left: 0;
+    justify-content: space-between;
 
-    div:nth-child(1) {
-        box-shadow: 0px 2px 4px 2px #0000001A;
-        border-radius: 3px;
+
+    button {
+        font-size: 18px;
+        margin: auto;
+    }
+
+    button:nth-child(1) {
+        width: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: white;
-        margin: 12px;
-        img {
-            width: 50px;
-            height: 70px;
-            padding: 8px;
-        }
+        color: #52B6FF;
     }
 
-    div:nth-child(2) {
+    button:nth-child(2) {
+        margin: none;
+        width: 91px;
+        height: 91px;
+        border-radius: 98.5px;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        p {
-            text-align: left;
-            &:nth-child(2) {
-                margin-top: 10px;
-            }
-        }
+        align-items: center;
+        justify-content: center;
+        background-color: #52B6FF;
+    }
+
+    button:nth-child(3) {
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: #52B6FF;
     }
 `

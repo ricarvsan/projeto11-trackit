@@ -17,6 +17,10 @@ export const PageContainer = styled.div`
     button {
         margin-bottom: 25px;
         width: 323px;
+        &:disabled {         
+            background-color: #52B6FF;
+            opacity: 0.7;
+        }
     }
     p {
         font-size: 14px;
@@ -27,5 +31,8 @@ export const PageContainer = styled.div`
     a {
         text-decoration: none;
         color: inherit;
+    }
+    input:disabled {
+        background-color: #F2F2F2;
     }
 `
