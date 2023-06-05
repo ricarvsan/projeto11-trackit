@@ -13,6 +13,7 @@ export const FooterContainer = styled.div`
     bottom: 0;
     left: 0;
     justify-content: space-between;
+    z-index: 2;
 
 
     button {
@@ -47,5 +48,9 @@ export const FooterContainer = styled.div`
         justify-content: center;
         background-color: white;
         color: #52B6FF;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 `

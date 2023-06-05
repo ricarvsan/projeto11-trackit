@@ -6,10 +6,8 @@ export const MeusHabitosContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 70px 0 0 0;
 
     button {
-        margin-right: 17px;
         width: 40px;
         height: 35px;
         display: flex;
@@ -20,7 +18,6 @@ export const MeusHabitosContainer = styled.div`
     }
 
     p {
-        padding-left: 17px;
         font-size: 23px;
         color: #126ba5;
     }

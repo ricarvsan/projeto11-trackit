@@ -10,6 +10,8 @@ export const NavContainer = styled.div`
     position: fixed;
     top: 0;
     left: 0;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    z-index: 2;
     p {
         font-family: Playball;
         font-size: 39px;
@@ -22,5 +24,9 @@ export const NavContainer = styled.div`
         height: 51px;
         border-radius: 90px;
         margin: auto 18px;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 `

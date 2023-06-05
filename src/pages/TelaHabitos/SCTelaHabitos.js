@@ -1,25 +1,16 @@
 import styled from "styled-components"
 
 export const PageContainer = styled.div`
-    display: flex;
-    height: 90vh;
-    flex-direction: column;
-    align-items: center;
+    width: 340px;
+    height: 100vh;
+    background-color: #E5E5E5;
+    padding: 98px 18px 0 17px;
+    position: fixed;
+    overflow-y: scroll;
     font-family: Lexend Deca;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 30px;
-    background: #E5E5E5;
+    display: flex;
+    flex-direction: column;
 
-    img {
-        width: 180px;
-        height: 180px;
-        margin-bottom: 32px;
-    }
-    button {
-        margin-bottom: 25px;
-        width: 323px;
-    }
     a {
         text-decoration: none;
         color: inherit;

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const NenhumHabitoContainer = styled.div`
+export const HabitosConcluidosContainer = styled.div`
     width: 338px;
     height: 74px;
     display: flex;
